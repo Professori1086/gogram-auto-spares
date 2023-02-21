@@ -5,3 +5,31 @@ h1 {
 	font-family: sans-serif;
 	font-size: 3em;
 }
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+@media only screen and (max-width:600px) {
+	.main-nav {
+		font-size: 1em;
+		padding: 0;
+	}
+	h1 {
+		font-size: 2em;
+	}
+}
+.center{
+	border: 5px solid;
+	text-align: center;
+}
+
+.top{
+	display: flex;
+	height: 10vh;
+}
+
+form{
+	display: inline-block;
+}

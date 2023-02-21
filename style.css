@@ -55,7 +55,7 @@ a {
 /*cover*/
 
 .container {
-	display: fles;
+	display: flex;
 	height: 50vh;
 }
 
