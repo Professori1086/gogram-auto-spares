@@ -32,3 +32,15 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+#items .product{
+    width:200px ;
+    text-align: ;
+    padding: 10px 15px;
+
+}
+
+#items img{
+    width: 200px;
+    height: 200px;
+}
