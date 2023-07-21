@@ -27,11 +27,11 @@ body{
     font: 25px sans-serif;
 }
 
+/* Style for index.html */
 
 #items{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
 }
 
 #items .product{
@@ -48,6 +48,31 @@ body{
 }
 
 #items img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Style fot the product.html */
+
+#main .main-child{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#main .product{
+    width:200px ;
+    text-align: ;
+    padding: 10px 15px;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main .product:hover{
+    background-color: orange;
+}
+
+#main img{
     width: 200px;
     height: 200px;
 }
