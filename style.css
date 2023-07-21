@@ -31,13 +31,20 @@ body{
 #items{
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }
 
 #items .product{
     width:200px ;
     text-align: ;
     padding: 10px 15px;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+#items .product:hover{
+    background-color: orange;
 }
 
 #items img{
