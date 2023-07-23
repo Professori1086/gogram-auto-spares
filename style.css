@@ -9,6 +9,8 @@ body{
     justify-content: space-between;
     padding: 5px 30px;
     background-color: #FBFBFB;
+    flex-grow: 1;
+    overscroll-behavior-x: contain;
 }
 
 #header img{
@@ -35,7 +37,9 @@ body{
 
 #items{
     display: flex;
-    flex-direction: row;
+    gap: 10px 10px;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 #items .product{
@@ -45,6 +49,7 @@ body{
     border: 1px solid green;
     border-radius: 10px;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 #items .product:hover{
