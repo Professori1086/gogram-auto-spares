@@ -13,11 +13,11 @@
 		<header>
 			<a href="index.html"><img src="id-logo.jpeg"></a>		
 		</header>	
-		<nav >
+		<nav>
 			<ul id="main-nav">
 				<li><a href="about.html">About</a></li>
 				<li><a href="products.html">Products</li>
-				<li class="push"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+				<li class="push"><a href="cart.html" onclick="openCart()"><i class="fa fa-shopping-cart"></i></a></li>
 				<li><a href="login.html">LogIn</a></li>
 				<li><a href="signup.html">SignUp</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
@@ -64,10 +64,10 @@
 		<section id="items">
 			<div class="product">
 				<img src="product1.jpg" alt="">
-				<h3>Product 1</h3>
+				<h3>Product_1</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. </p>
-				<button>Add to cart </button>
+				<button onclick="addToCart(Product_1)">Add to cart </button>
 			</div>
 
 			<div class="product">
@@ -150,5 +150,6 @@
 	<footer>
 		<p> Copyright 2023 Gogram auto spares. All rights reserved</p>
 	</footer>
+	<script type="text/javascript" href="script.js"></script>
 </body>
 </html> 
