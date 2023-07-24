@@ -101,9 +101,3 @@ body{
     width: 200px;
     height: 400px;
 }
-
-#login-form .child .1,
-#login-form .child .2,
-#login-form .child .3{
-    padding: 10px 10px;
-}
