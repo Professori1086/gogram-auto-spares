@@ -3,21 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cart</title>
+	<title>ShoppingCart</title>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--custom css -->
 	<link rel="stylesheet" type="text/css" href="cart-container.css">
 </head>
 <body>
-	<div class="link">
-		<h4><a href="index.html">Go Back</a></h4>
+	<div id="cart-header">
+		<div class="link">
+			<h4><a href="index.html">Go Back</a></h4>
+		</div>
+		<div id="cart-title">
+ 			<h3 class="heading">Shopping Cart</h3>
+ 		</div>	
+		<div id="cart-container">
+			<ul id="cart-items"></ul>
+		</div>
 	</div>
-	<div class=”Header”>
- 		<h3 class=”Heading”>Shopping Cart</h3>
- 		<h5 class=”Action”>Remove all</h5>
- 	</div>	
-	<div class="Cart-container">
-		<ul id="cart-items"></ul>
-		<button onclick="closeCart()">Close cart</button>
+	<div id="cart-footer">
+		<button type="button" class="btn btn-danger" onclick="closeCart()">Remove All</button>
 	</div>
-
 </body>
 </html>

@@ -13,51 +13,51 @@ function addToCart(productName, price, quantity){
 }
 
 function openCart(){
-	const cart = document.getElementsById('cart');
+	const cart = document.getElementsById('fa-shopping-cart');
 	cartstyle.display = "block"
 }
 
 // Function to update the cart UI
-function updateCartUI() {
-  const cartItemsList = document.getElementById("cart-items-list");
-  cartItemsList.innerHTML = "";
+// function updateCartUI() {
+//   const cartItemsList = document.getElementById("cart-items-list");
+//   cartItemsList.innerHTML = "";
 
-  cartItems.forEach((item) => {
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-      <span>${item.productName} - $${item.price.toFixed(2)} x ${item.quantity}</span>
-      <button onclick="updateQuantity('${item.productName}', ${item.quantity - 1})">-</button>
-      <button onclick="updateQuantity('${item.productName}', ${item.quantity + 1})">+</button>
-      <button onclick="removeFromCart('${item.productName}')">Remove</button>
-    `;
-    cartItemsList.appendChild(listItem);
-  });
+//   cartItems.forEach((item) => {
+//     const listItem = document.createElement("li");
+//     listItem.innerHTML = `
+//       <span>${item.productName} - $${item.price.toFixed(2)} x ${item.quantity}</span>
+//       <button onclick="updateQuantity('${item.productName}', ${item.quantity - 1})">-</button>
+//       <button onclick="updateQuantity('${item.productName}', ${item.quantity + 1})">+</button>
+//       <button onclick="removeFromCart('${item.productName}')">Remove</button>
+//     `;
+//     cartItemsList.appendChild(listItem);
+//   });
 
-  const totalCostElement = document.getElementById("total-cost");
-  totalCostElement.innerText = `$${calculateTotalCost().toFixed(2)}`;
-}
+//   const totalCostElement = document.getElementById("total-cost");
+//   totalCostElement.innerText = `$${calculateTotalCost().toFixed(2)}`;
+// }
 
-// Function to remove an item from the cart
-function removeFromCart(productName) {
-  cartItems = cartItems.filter(item => item.productName !== productName);
-  updateCartUI();
-}
+// // Function to remove an item from the cart
+// function removeFromCart(productName) {
+//   cartItems = cartItems.filter(item => item.productName !== productName);
+//   updateCartUI();
+// }
 
-// Function to update quantity of an item in the cart
-function updateQuantity(productName, quantity) {
-  const item = cartItems.find(item => item.productName === productName);
+// // Function to update quantity of an item in the cart
+// function updateQuantity(productName, quantity) {
+//   const item = cartItems.find(item => item.productName === productName);
 
-  if (item) {
-    item.quantity = quantity;
-  }
+//   if (item) {
+//     item.quantity = quantity;
+//   }
 
-  updateCartUI();
-}
+//   updateCartUI();
+// }
 
-// Function to calculate the total cost of the cart
-function calculateTotalCost() {
-  return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-}
+// // Function to calculate the total cost of the cart
+// function calculateTotalCost() {
+//   return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+// }
 
 
 

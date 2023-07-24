@@ -29,7 +29,13 @@ body{
 }
 
 #main-nav li a{
+    color: royalblue;
     text-decoration: none;
+    font: 18px sans-serif;
+}
+
+#main-nav li a:hover{
+    color: red;
     font: 18px sans-serif;
 }
 
@@ -38,8 +44,9 @@ body{
 #items{
     display: flex;
     gap: 10px 10px;
+    align-items: flex-start;
     justify-content: space-between;
-    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 #items .product{
@@ -84,4 +91,19 @@ body{
 #main img{
     width: 200px;
     height: 200px;
+}
+
+/* login form */
+#login-form .child{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 200px;
+    height: 400px;
+}
+
+#login-form .child .1,
+#login-form .child .2,
+#login-form .child .3{
+    padding: 10px 10px;
 }
