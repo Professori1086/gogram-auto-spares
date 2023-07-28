@@ -1,21 +1,44 @@
-let cartItems = []
+// let cartItems = []
 
-// Function to add an item to the cart
-function addToCart(productName, price, quantity){
-  const existingItem = cartItems.find(item => item.productName === productName);
+// // Function to add an item to the cart
+// function addToCart(productName, price, quantity){
+//   const existingItem = cartItems.find(item => item.productName === productName);
 
-  if (existingItem) {
-    existingItem.quantity += quantity;
-  } else {
-    cartItems.push({ productName, price, quantity });
-  }	
-	updateCartUI();
+//   if (existingItem) {
+//     existingItem.quantity += quantity;
+//   } else {
+//     cartItems.push({ productName, price, quantity });
+//   }	
+// 	updateCartUI();
+// }
+
+// function openCart(){
+// 	const cart = document.getElementsById('fa-shopping-cart');
+// 	cartstyle.display = "block"
+// }
+
+// function to add click event to Truck Parts Section //
+
+function event() {
+  alert("div clicked");
 }
 
-function openCart(){
-	const cart = document.getElementsById('fa-shopping-cart');
-	cartstyle.display = "block"
-}
+document.getElementsByClassName('section-1-product').addEventListener('click', event);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Function to update the cart UI
 // function updateCartUI() {
