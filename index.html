@@ -6,8 +6,9 @@
 	<!-- Title oF the website -->
 	<title>Gogram Auto Spares</title>
 	<!-- Font file for site -->
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 	<section id="header">
 		<header>
@@ -27,6 +28,14 @@
 	</section>
 	
 	<main>
+  		<form class="form-inline">
+  			<a class="navbar-brand">Find items</a>
+   			<input type="search" id="form1" placeholder="Search...." class="form-control" />
+ 			<button type="button" class="btn btn-primary">
+ 				<i class="fas fa-search"></i>
+ 			</button>
+  		</form>
+
 		<h2>Truck Parts</h2>
 		<section>
 			<div id="items" class="section-1">
@@ -63,47 +72,50 @@
 			
 		</section>
 
-		<h2>Accessories and universal items</h2>
-		<section id="items">
-			<div class="product">
-				<img src="product1.jpg" alt="">
-				<h3>Product_1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>
-				<button onclick="addToCart(Product_1)">Add to cart </button>
+		<section >
+			<h2>Accessories and universal items</h2>
+			<div id="accessories">
+				<div class="product">
+					<img src="product1.jpg" alt="">
+					<h3>Product_1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. </p>
+					<button onclick="addToCart(Product_1)">Add to cart </button>
+				</div>
+
+				<div class="product">
+					<img src="product2.jpg" alt="=product 2">
+					<h3>Product 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button>Add to cart </button>
+				</div>
+
+				<div class="product">
+					<img src="product2.jpg" alt="=product 2">
+					<h3>Product 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button>Add to cart </button>
+				</div>
+
+				<div class="product">
+					<img src="product2.jpg" alt="=product 2">
+					<h3>Product 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button>Add to cart </button>
+				</div>
+
+				<div class="product">
+					<img src="product2.jpg" alt="=product 2">
+					<h3>Product 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button>Add to cart </button>
+				</div>
 			</div>
 
-			<div class="product">
-				<img src="product2.jpg" alt="=product 2">
-				<h3>Product 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button>Add to cart </button>
-			</div>
-
-			<div class="product">
-				<img src="product2.jpg" alt="=product 2">
-				<h3>Product 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button>Add to cart </button>
-			</div>
-
-			<div class="product">
-				<img src="product2.jpg" alt="=product 2">
-				<h3>Product 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button>Add to cart </button>
-			</div>
-
-			<div class="product">
-				<img src="product2.jpg" alt="=product 2">
-				<h3>Product 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button>Add to cart </button>
-			</div>
 		</section>
 
 		<h2>Lubricants</h2>
