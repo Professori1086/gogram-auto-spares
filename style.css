@@ -7,6 +7,10 @@ h2{
     padding-left: 20px;
 }
 
+footer{
+    padding-left: 40px;
+}
+
 #header{
     display: flex;
     align-items: center;
@@ -60,7 +64,8 @@ h2{
 /* Style for index.html */
 
 #items,
-#accessories{
+#accessories,
+#lubricants{
     display: flex;
     gap: 10px 10px;
     align-items: flex-start;
@@ -70,9 +75,9 @@ h2{
     padding-left: 10px;
 }
 
-
+#items .section-1-product,
 #accessories .product,
-#items .section-1-product{
+#lubricants .product{
     width:200px ;
     height: 270px;
     padding: 10px 15px;
@@ -82,7 +87,8 @@ h2{
     flex-grow: 1;
 }
 
-#items .section-1-product:hover{
+#items .section-1-product:hover,
+#accessories .product:hover{
     background-color: orange;
 }
 
@@ -91,18 +97,46 @@ h2{
     height: 170px;
 }
 
+#accessories .product button{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Style fot the product.html */
+
+#main{
+    display: flex;
+    flex-direction: row;
+}
 
 #main .main-child{
     display: flex;
     flex-direction: row;
 }
 
+#main .product-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #main .product{
     width:200px ;
-    text-align: ;
     padding: 10px 15px;
     border: 1px solid green;
     border-radius: 10px;
@@ -114,8 +148,14 @@ h2{
 }
 
 #main img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#main .dropdown{
+    padding-left: 10px;
+    padding-right: 40px;
 }
 
 /* login form */

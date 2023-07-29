@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gogram Auto Spares</title>
 	<!-- Font file for site -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<section id="header">
@@ -26,46 +27,50 @@
 		</nav>
 	</section>
 
-    <main id="main">
-    	<div id="selector">
-    		<select name="part-names" id="part-name"> 
-        		<option value="Tata">Tata</option> 
-       			<option value="Faw">Faw</option> 
-        		<option value="Isuzu">Isuzu</option> 
-        		<option value="Mitsubishi">Mitsubishi</option> 
-   			</select>
-    	</div>
-    	<div class="main-child">
-    		<div class="product">
-				<img src="./images/turbo-charger.jpg" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. </p>				
-				<h3>Ksh 10,0000</h3>
-				<button>Add to cart </button>
-			</div>
+    <main >
+    	<div id="main">
+    		<div class="dropdown">
+    			<button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Truck Brand </button>
 
-			<div class="product">
-				<img src="./images/e4b4ed3f-018c-4886-9878-8942cdf5036c.jpg" alt="=product 2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<h3>Ksh 10,000</h3>
-				<button>Add to cart </button>
-			</div>
+    			<div class="dropdownmenu" aria-labelledby="dropdownMenuLink">
+    				<a class="dropdown-item" href="#">Faw</a>
+    				<a class="dropdown-item" href="#">Tata</a>
+    				<a class="dropdown-item" href="#">Isuzu</a>
+    				<a class="dropdown-item" href="#">Shacman</a>
+    				<a class="dropdown-item" href="#">Howo</a>
+    			</div>
+    		</div>
+ 	    	<div class="product-items">
+    			<div class="product">
+					<img src="./images/turbo-charger.jpg" alt="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. </p>				
+					<h3>Ksh 10,0000</h3>
+					<button>Add to cart </button>
+				</div>
 
-			<div class="product">
-				<img src="./images/dcf66a95-654d-4dda-987f-525f2ab8ce17.jpg" alt="=product 2">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<h3>Ksh 10,000</h3>
-				<button>Add to cart </button>
-			</div>
-    	</div>
-    	
-    </div>
+				<div class="product">
+					<img src="./images/e4b4ed3f-018c-4886-9878-8942cdf5036c.jpg" alt="=product 2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h3>Ksh 10,000</h3>
+					<button>Add to cart </button>
+				</div>
+
+				<div class="product">
+					<img src="./images/dcf66a95-654d-4dda-987f-525f2ab8ce17.jpg" alt="=product 2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h3>Ksh 10,000</h3>
+					<button>Add to cart </button>
+				</div>
+    		</div>   				 
+    	</div>	
     </main>
-    <div id="main">
-    	
-    
-
+	<footer>
+		<p> Copyright 2023 Gogram Auto Spares. All rights reserved</p>
+	</footer>
+	<script type="text/javascript" href="script.js"></script>
+  
 </body>
 </html>
